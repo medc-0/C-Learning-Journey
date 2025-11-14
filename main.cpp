@@ -38,5 +38,25 @@ int main() {
     cout << "Hello, " << name;
     */
 
+    // typedef = resolved to create an additional name
+    //           (alias) for another data type.
+    //           New identifier for an existing type
+    //           Helps with readablity and reduces typos
+    //           Use when there is a clear benefit
+    //           Replaced with 'using' (work better w/ templates)
+
+    /*
+    std::vector<std::pair<std::string, int>> pairlist = {"hello", 1};
+    pairlist_t pairlist = {"hello", 2};
+
+    text_t firstname = "firstname";
+    text_t lastname = "Lastname";
+    num_t age = 20;
+
+    std::cout << "Hello, " << firstname + " " + lastname << "\n";
+    std::cout << "You are: " << age << " years old" << "\n";
+    */
+
+
     return 0; 
 }
