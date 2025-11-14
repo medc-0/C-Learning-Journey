@@ -106,5 +106,25 @@ int main() {
     std::cout << score << "%";
     */
 
+    // cout << (insertion operator)
+    // cin >> (extraction operator)
+
+    /*
+    std::string name;
+    int age;
+
+    std::cout << "Whats your name: ";
+    std::cin >> name;
+
+    std::cout << "Whats your full-name?: " << "\n";
+    std::getline(std::cin >> std::ws, name);
+
+    std::cout << "Whats your age: ";
+    std::cin >> age;
+
+    std::cout << "Your name: " << name << "\n";
+    std::cout << "You are " << age << " Years old" << "\n";
+    */
+
     return 0; 
 }
