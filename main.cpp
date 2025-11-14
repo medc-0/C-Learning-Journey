@@ -31,6 +31,7 @@ double calculateSquare(double x);
 std::string conncatonateString(std::string string1, std::string string2);
 void sort(int array[], int size);
 void swap(std::string &x, std::string &y);
+void printInfo(const std::string name, const int age);
 */
 
 int main() {
@@ -529,6 +530,17 @@ int main() {
     std::cout << "Y: " << y << '\n';
     */
 
+    // const parameter = parameter that is effectively read-only
+    //                   code is more secure & conveys intent
+    //                   useful for refernces and pointers
+
+    /*
+    std::string name = "Med";
+    int age = 21;
+
+    printInfo(name, age);
+    */
+
     return 0; 
 }
 
@@ -564,11 +576,18 @@ void sort(int array[], int size) {
         }
     }
 }
-    
+
 void swap(std::string &x, std::string &y) {
     std::string temp;
     temp = x;
     x = y;
     y = temp;
+}
+
+void printInfo(const std::string name, const int age) {
+    // name = " ";
+    // age = 0;
+    std::cout << name << '\n';
+    std::cout << age << '\n';
 }
 */
