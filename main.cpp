@@ -328,5 +328,21 @@ int main() {
     }
     */
 
+    // nested loops = a loop inside of another loop
+    //                mostly used in datastructures
+
+    /*
+    int rows = 4;
+    int columns = 6;
+    char symbol = '#';
+
+    for (int i = 0; i <= rows; i++) {
+        for (int j = 0; j <= columns; j++) {
+            std::cout << symbol << " ";
+        }
+        std::cout << "\n";
+    }
+    */
+
     return 0; 
 }
