@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <ctime>
 
 // Namespaces with scopes using the :: Operator known as the scope resolution operator
 namespace first
@@ -342,6 +343,20 @@ int main() {
         }
         std::cout << "\n";
     }
+    */
+
+    // pseduo-random = NOT truly random (but close)
+
+    /*
+    srand(time(NULL));
+
+    int num1 = (rand() % 6) + 1;
+    int num2 = (rand() % 12) + 1;
+    int num3 = (rand() % 20) + 1;
+
+    std::cout << num1 << "\n";
+    std::cout << num2 << "\n";
+    std::cout << num3 << "\n";
     */
 
     return 0; 
