@@ -307,5 +307,17 @@ int main() {
     name.erase(0, 3);
     */
 
+    // while loops = run this code aslong as
+    //               the condition remains true.
+
+    /*
+    int wnum1 = 1;
+
+    while(wnum1 <= 10) {
+        std::cout << wnum1 << "\n";
+        wnum1++;
+    }
+    */
+
     return 0; 
 }
