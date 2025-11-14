@@ -224,5 +224,46 @@ int main() {
     }
     */
 
+    // Calculator program = simplified version
+    //                      Runs in the console.
+
+    /*
+    char op;
+    double num1;
+    double num2;
+    double res;
+
+    std::cout << "************* CALCULATOR **************\n";
+
+    op = '+';
+
+    num1 = 5.5;
+    num2 = 3.4;
+
+    switch(op) {
+        case '+':
+            res = num1 + num2;
+            std::cout << "Result: " << res << "\n";
+            break;
+        case '-':
+            res = num1 - num2;
+            std::cout << "Result: " << res << "\n";
+            break;
+        case '*':
+            res = num1 * num2;
+            std::cout << "Result: " << res << "\n";
+            break;
+        case '/':
+            res = num1 / num2;
+            std::cout << "Result: " << res << "\n";
+            break;
+        default:
+            std::cout << "not an available operator!" << "\n";
+            break;
+    }
+
+    std::cout << "****************************************";
+    */
+
     return 0; 
 }
