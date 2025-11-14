@@ -408,6 +408,34 @@ int main() {
     std::cout << "points: " << points[0] << ", " << points[1] << ", " << points[2] << ", " << points[3] << '\n';
     */
 
+    // sizeof() = determines the size in bytes of a:
+    //            variable, data type, class, object, etc.
+
+    /*
+    double gpa = 2.5;
+    std::string text = "med";
+    char grade = 'A';
+    bool student = true;
+    char grades[] = {'A', 'B', 'C', 'D', 'F'};
+    std::string students[] = {"spongebob", "bob", "patrick"};
+
+
+    std::cout << sizeof(std::string) << " bytes\n";
+    std::cout << sizeof(int) << " bytes\n";
+    std::cout << sizeof(double) << " bytes\n";
+    std::cout << sizeof(float) << " bytes\n";
+    std::cout << sizeof(char) << " bytes\n";
+    std::cout << sizeof(long) << " bytes\n";
+    std::cout << sizeof(bool) << " bytes\n";
+    std::cout << sizeof(gpa) << " bytes\n";
+    std::cout << sizeof(text) << " bytes\n";
+    std::cout << sizeof(grade) << " bytes\n";
+    std::cout << sizeof(student) << " bytes\n";
+    std::cout << sizeof(grades) << " bytes\n";
+    std::cout << sizeof(grades)/sizeof(char) << " elements\n";
+    std::cout << sizeof(students)/sizeof(students[0]) << " elements\n";
+    */
+
     return 0; 
 }
 
