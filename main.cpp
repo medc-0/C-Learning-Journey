@@ -190,5 +190,39 @@ int main() {
     }
     */
 
+    // switch = alternative to using many "else if" statements
+    //          compare one value to matching cases.
+
+    /*
+    int day = 298;
+
+    switch (day)
+    {
+    case 1:
+        std::cout << "today is monday!" << "\n";
+        break;
+    case 2:
+        std::cout << "today is tuesday!" << "\n";
+        break;
+    case 3:
+        std::cout << "today is wednesday!" << "\n";
+        break;
+    case 4:
+        std::cout << "today is thursday!" << "\n";
+        break;
+    case 5:
+        std::cout << "today is friday!" << "\n";
+        break;
+    case 6:
+        std::cout << "today is saturday!" << "\n";
+        break;
+    case 7:
+        std::cout << "today is sunday!" << "\n";
+        break;
+    default:
+        std::cout << "this is not a day!" << "\n";
+    }
+    */
+
     return 0; 
 }
