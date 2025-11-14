@@ -484,6 +484,21 @@ int main() {
     }
     */
 
+    // fill() = Fills a range of elements with a specified value
+    //          fill(start, end, value);
+
+    /*
+    const int SIZE = 100;
+    std::string fruits[SIZE];
+
+    fill(fruits, fruits + SIZE, "mango");
+
+    for (auto fruit : fruits)
+    {
+        std::cout << fruit << '\n';
+    }
+    */
+
     return 0; 
 }
 
