@@ -24,6 +24,11 @@ using pairlist_t = std::vector<std::pair<std::string, int>>;
 using text_t = std::string;
 using num_t = int;
 
+/*
+void _func1();
+void _func2(std::string func__);
+*/
+
 int main() {
     
     /*
@@ -359,5 +364,28 @@ int main() {
     std::cout << num3 << "\n";
     */
 
+    // functions = a block of re-useable code
+
+    /*
+    std::string func__ = "function";
+
+    _func1();
+    _func2(func__);
+    */
+
     return 0; 
 }
+
+/*
+void _func1() {
+    std::cout << "this is a function without parameters\n";
+    std::cout << "it is a reuseable block of code\n";
+    std::cout << "functions are useful even without them.\n\n";
+}
+
+void _func2(std::string func__) {
+    std::cout << "this is a " << func__ << " and it also uses a parameter\n";
+    std::cout << "it is a reuseable block of code\n";
+    std::cout << "a " << func__ << " is useful also with parameters.\n\n";
+}
+*/
