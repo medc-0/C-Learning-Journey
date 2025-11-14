@@ -27,6 +27,8 @@ using num_t = int;
 /*
 void _func1();
 void _func2(std::string func__);
+double calculateSquare(double x);
+std::string conncatonateString(std::string string1, std::string string2);
 */
 
 int main() {
@@ -373,6 +375,20 @@ int main() {
     _func2(func__);
     */
 
+    // return = return a value back to the spot
+    //          where you called the encompassing function.
+
+    /*
+    double x = 5.0;
+    std::cout << "the square is: " << calculateSquare(x) << "cm";
+
+    std::string first_name = "med";
+    std::string last_name = "lar";
+    std::string fullName = conncatonateString(first_name, last_name);
+
+    std::cout << "hello, " << fullName << "\n";
+    */
+
     return 0; 
 }
 
@@ -387,5 +403,12 @@ void _func2(std::string func__) {
     std::cout << "this is a " << func__ << " and it also uses a parameter\n";
     std::cout << "it is a reuseable block of code\n";
     std::cout << "a " << func__ << " is useful also with parameters.\n\n";
+}
+double calculateSquare(double x) {
+    return x * x;
+}
+
+std::string conncatonateString(std::string string1, std::string string2) {
+    return string1 + " " + string2;
 }
 */
