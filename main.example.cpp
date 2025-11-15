@@ -80,6 +80,20 @@ class Car {
         }
 };
 
+class Student {
+    public:
+        std::string name;
+        int age;
+        double gpa;
+
+    Student(std::string name, int age, double gpa) {
+        this->name = name;
+        this->age = age;
+        this->gpa = gpa;
+    }
+};
+
+
 //  Typedef: Example for a very long data type and to reduce writing this everytime we can use a typedef (type-definition)
 /*
 typedef std::vector<std::pair<std::string, int>> pairlist_tp;
@@ -721,6 +735,16 @@ int main() {
     car1.brake();
     car2.accelerate();
     car2.brake();
+
+    // constructor = special method that is automatically called when an object is instantiated
+    //               useful for assigning values to attributes as arguments
+
+    Student student3("Spongebob", 25, 3.2);
+    Student student4("Patrick", 23, 2.0);
+
+    std::cout << student3.name << '\n';
+    std::cout << student3.age << '\n';
+    std::cout << student3.gpa << '\n';
 
     return 0; 
 }
