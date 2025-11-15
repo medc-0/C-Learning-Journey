@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <ctime>
+// template <typename T>
 
 // Namespaces with scopes using the :: Operator known as the scope resolution operator
 namespace first
@@ -13,6 +14,12 @@ namespace second {
     int x = 2;
 }
 */
+
+struct student {
+    std::string name;
+    double gpa;
+    bool enrolled;
+};
 
 //  Typedef: Example for a very long data type and to reduce writing this everytime we can use a typedef (type-definition)
 /*
@@ -33,6 +40,10 @@ void sort(int array[], int size);
 void swap(std::string &x, std::string &y);
 void printInfo(const std::string name, const int age);
 */
+
+// T max(T x, T y) {
+//     return (x > y) ? x : y;
+// }
 
 int main() {
     
@@ -587,6 +598,29 @@ int main() {
         std::cout << *pointer << '\n';
     }
     */
+
+    // struct = A structure that group related variables under one name
+    //          structs can contain many different datatypes (strings, ints, etc)
+    //          variables in a struct are known as "members"
+    //          member can be access with . "Class Member oepration"
+
+    student student1;
+    student1.name = "Med";
+    student1.gpa = 4.0;
+    student1.enrolled = true;
+
+    student student2;
+    student2.name = "Bob";
+    student2.gpa = 3.2;
+    student2.enrolled = false;
+
+    std::cout << student1.name << '\n';
+    std::cout << student1.gpa << '\n';
+    std::cout << student1.enrolled << '\n';
+
+    std::cout << student2.name << '\n';
+    std::cout << student2.gpa << '\n';
+    std::cout << student2.enrolled << '\n';
 
     return 0; 
 }
