@@ -149,7 +149,6 @@ class Dog : public Animal {
     void bark() {
         std::cout << "the dog is barking\n";
     }
-
 };
 
 class Cat : public Animal {
@@ -321,7 +320,7 @@ int main() {
     std::cout << "You are " << age << " Years old" << "\n";
     */
 
-    // Useful Math Related functions = Showcase pof very useful math-related
+    // Useful Math Related functions = Showcase of very useful math-related
     //                                 Functions in C++.
 
     /*
@@ -388,7 +387,7 @@ int main() {
     //          compare one value to matching cases.
 
     /*
-    int day = 298;
+    int day = 2;
 
     switch (day)
     {
@@ -415,6 +414,7 @@ int main() {
         break;
     default:
         std::cout << "this is not a day!" << "\n";
+        break;
     }
     */
 
@@ -472,7 +472,7 @@ int main() {
     number % 2 == 0 ? std::cout << "number is even\n" : std::cout << "number is odd\n";
     */
 
-     // Useful string methods = in c++ for various situations.
+    // Useful string methods = in c++ for various situations.
 
     /*
     std::string name;
@@ -641,7 +641,7 @@ int main() {
         std::cout << grades[i] << '\n';
     }
 
-     std::cout << students[0] << '\n';
+    std::cout << students[0] << '\n';
 
     // foreach loop = loop that eases the traversal over an
     //                iterable data set
@@ -731,7 +731,7 @@ int main() {
     // * dereference operator
 
     /*
-    std::string name5 = "Med";
+    std::string name5 = "Bob";
     std::string freeValue[5] = {"value1", "value2", "value3", "value4", "value5"};
     int age5 = 22;
 
@@ -747,7 +747,7 @@ int main() {
     std::cout << *pFreeValue << '\n';
     */
 
-    // Null value = a special value that means sonething has no value.
+    // Null value = a special value that means something has no value.
     //              When a pointer is holding a null value,
     //              that pointer is not pointing at anything (null pointer)
 
@@ -774,7 +774,7 @@ int main() {
     // struct = A structure that group related variables under one name
     //          structs can contain many different datatypes (strings, ints, etc)
     //          variables in a struct are known as "members"
-    //          member can be access with . "Class Member oepration"
+    //          member can be access with . "Class Member operation"
 
     student student1;
     student1.name = "Med";
@@ -856,7 +856,7 @@ int main() {
 
     // Abstraction = hiding unnecessary data from outside a class
     // getter = function that makes a private attribute READABLE
-    // setter = function that makes a private attribute WRITEABEL
+    // setter = function that makes a private attribute WRITEABLE
 
     Stove stove(4);
 
