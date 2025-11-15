@@ -45,6 +45,41 @@ enum Flavor { // Implicit value is assigned! from 0-x
     mint // 3
 };
 
+class Human {
+    public:
+        std::string name;
+        std::string occupation;
+        int age;
+        int points = 100; // non assigned attributes sort-of like clones
+
+        void eat() {
+            std::cout << "This person is eating!" << '\n';
+        }
+
+        void drink() {
+            std::cout << "This person is drinking!" << '\n';
+        }
+
+        void sleep() {
+            std::cout << "This person is sleeping!" << '\n';
+        }
+};
+
+class Car {
+    public:
+        std::string make;
+        std::string color = "black";
+        int year;
+
+        void accelerate() {
+            std::cout << "The " <<  this->color << " " << this->make << " is accelerating!\n";
+        }
+
+        void brake() {
+            std::cout << "The " <<  this->color << " " << this->make << " is braking!\n";
+        }
+};
+
 //  Typedef: Example for a very long data type and to reduce writing this everytime we can use a typedef (type-definition)
 /*
 typedef std::vector<std::pair<std::string, int>> pairlist_tp;
@@ -657,6 +692,35 @@ int main() {
     std::cout << currentDay << '\n';
     std::cout << direction << '\n';
     std::cout << currentFlavor << '\n';
+
+    // object = A collection of attributes and methods
+    //          They can have characteristics and could perform actions
+    //          Can be used to mimic real world items (ex. Phone, Book, Dog)
+    //          Created from a class which acts as a "blue-print".
+
+    Human human1;
+
+    human1.name = "Bob";
+    human1.occupation = "Programmer";
+    human1.age = 30;
+
+    human1.eat();
+    human1.drink();
+    human1.sleep();
+
+    Car car1;
+    car1.make = "Mercedes";
+    car1.year = 2025;
+
+    Car car2;
+    car2.make = "Mustang";
+    car2.color = "white";
+    car2.year = 2024;
+
+    car1.accelerate();
+    car1.brake();
+    car2.accelerate();
+    car2.brake();
 
     return 0; 
 }
