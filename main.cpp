@@ -3,17 +3,17 @@
 
 int main() {
 
-    std::vector<int> scores = {1, 2, 3, 4, 5, 6};
+    std::vector<std::string> fruits = {"apple", "banana", "cherry", "strawberry", "blueberry"};
 
-    for (auto score : scores) {
-        std::cout << score << " ";
+    for (auto fruit : fruits) {
+        std::cout << fruit << std::endl;
     }
     std::cout << std::endl;
-
-    for (auto& score : scores) {
-        score *= 3;
-        std::cout << score << " ";
+    
+    for (auto& fruit : fruits) {
+        fruit += " pie";
+        std::cout << fruit << " " << std::endl;
     }
-        
+ 
     return 0;
 }
