@@ -13,7 +13,7 @@ int main() {
     std::cout << std::endl;
 
     colors.insert(colors.begin(), "(dark red)");
-    colors.insert(colors.begin() + 3, "(dark blue)");
+    colors.insert(colors.begin() + 2, "(dark blue)");
     colors.insert(colors.end(), "(dark green)");
 
     for (auto color : colors) {
