@@ -933,6 +933,65 @@ int main() {
 
     delete[] pGrades; // delete[] if it is an array
 
+    // Vector = array-like container that is dynamically
+    //          managed throughout the program
+
+    std::vector<int> numbers = {1, 2, 3};
+    std::vector<float> numbersF = {1.1f, 2.2f, 3.3f};
+    std::vector<std::string> names = {"Bob", "Mark", "Ryan"};
+
+    // Loop through an vector with a
+    // range-based for-loop or if you want to access the current index
+    // without the copies use the '&' Operator.
+
+    for (auto number : numbers) {
+        std::cout << number << " ";
+    }
+    std::cout << '\n';
+
+    for (auto numberf : numbersF) {
+        std::cout << numberf << " ";
+    }
+    std::cout << '\n';
+
+    for (auto name : names) {
+        std::cout << name << " ";
+    }
+
+    // push_back() = add an element or value to the end of a vector.
+
+    std::vector<int> numbers2;
+
+    // add the value 2, 5, and 10 to the vector.
+    numbers2.push_back(2);
+    numbers2.push_back(5);
+    numbers2.push_back(10);
+
+    std::cout << "Size: " << numbers2.size() << " Capacity: " << numbers2.capacity() << '\n';
+    for (int i : numbers2) {
+        std::cout << i << ' ';
+    }
+
+    // &vectors = change access by reference
+    //            change the original values.
+
+    std::vector<int> points = {70, 98, 99, 87, 89};
+
+    for (auto point : points) {
+        std::cout << point << " ";
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+
+    for (auto& point : points) {
+        point += 10; // add +10 to each value
+    }
+
+    for (auto point : points) {
+        std::cout << point << " ";
+        std::cout << std::endl;
+    }
+
     return 0; 
 }
 
